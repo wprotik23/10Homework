@@ -19,7 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggerDll", "LoggerDll\Logg
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{A0129284-208E-4F78-BA48-A7EDD37C808F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task2510var2", "Task2510var2\Task2510var2.csproj", "{B56C9F5F-BB00-4280-99C2-075685647CD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task2510var2", "Task2510var2\Task2510var2.csproj", "{B56C9F5F-BB00-4280-99C2-075685647CD2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task2510var1", "task2510var1\task2510var1.csproj", "{F8B4E424-519E-4982-8279-D7506A7EB890}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threading", "Threading\Threading.csproj", "{729F2D01-F2FA-44AF-AB5A-6E8CB2FEE2BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +67,14 @@ Global
 		{B56C9F5F-BB00-4280-99C2-075685647CD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B56C9F5F-BB00-4280-99C2-075685647CD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B56C9F5F-BB00-4280-99C2-075685647CD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8B4E424-519E-4982-8279-D7506A7EB890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8B4E424-519E-4982-8279-D7506A7EB890}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8B4E424-519E-4982-8279-D7506A7EB890}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8B4E424-519E-4982-8279-D7506A7EB890}.Release|Any CPU.Build.0 = Release|Any CPU
+		{729F2D01-F2FA-44AF-AB5A-6E8CB2FEE2BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{729F2D01-F2FA-44AF-AB5A-6E8CB2FEE2BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{729F2D01-F2FA-44AF-AB5A-6E8CB2FEE2BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{729F2D01-F2FA-44AF-AB5A-6E8CB2FEE2BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

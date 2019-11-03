@@ -1,10 +1,10 @@
 ﻿using System;
-using Microsoft.Extensions.Configuration.Json;
+//using Microsoft.Extensions.Configuration.Json;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Configuration.FileExtensions;
+//using Microsoft.Extensions.Configuration.FileExtensions;
 using System.IO;
 using System.Collections.Generic;
-using System.Linq;
+//using System.Linq;
 using Printers;
 
 namespace Task2510var2
