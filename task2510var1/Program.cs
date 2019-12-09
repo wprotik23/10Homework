@@ -6,6 +6,8 @@ using System.IO;
 using System.Collections.Generic;
 using ExcelDataReader;
 using System.Data;
+using Microsoft.Office.Interop.Excel;
+using System.Linq;
 
 namespace task2510var1
 {
@@ -21,19 +23,29 @@ namespace task2510var1
             string str = config["File"];
             Console.WriteLine(str);
             Console.ReadKey();
-            FileStream fs = new FileStream(config["file"],FileMode.Open, FileAccess.Read);
 
-            List<string> lst = new List<string>();
-            IExcelDataReader excelReader;
-            //excelReader = ExcelReaderFactory.CreateReader(fs);
-
-            //lst.Add( excelReader.Read().ToString());                                                                    //чтение данных
-
-            foreach (var l in lst)
+            try
             {
-                Console.WriteLine(l);
-            }
 
+                Application ObjExcel = new Application();
+                Workbook wb = ObjExcel.Workbooks.Open("C:\\Andrii\\lists.xlsx",
+                0, true, 5, "", "", true, XlPlatform.xlWindows, "\t", false, false, 0, true);
+                Worksheet ws = (Worksheet)wb.Sheets[1];
+                Microsoft.Office.Interop.Excel.Range usedColumn =
+                    (Microsoft.Office.Interop.Excel.Range)ws.UsedRange.Columns[1];
+
+                System.Array myvalues = (System.Array)usedColumn.Cells.Value2;
+                string[] strArray = myvalues.OfType<object>().Select(o => o.ToString()).ToArray();
+                foreach (var r in strArray)
+                {
+                    Console.WriteLine(r);
+                }
+                ObjExcel.Quit();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
         }
     }
 }
